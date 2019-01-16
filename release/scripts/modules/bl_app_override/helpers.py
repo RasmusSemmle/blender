@@ -22,7 +22,7 @@
 # AppOverrideState
 
 
-class AppOverrideState:
+class AppOverrideState(object):
     """
     Utility class to encapsulate overriding the application state
     so that settings can be restored afterwards.
