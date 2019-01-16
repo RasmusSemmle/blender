@@ -40,7 +40,7 @@ def open_wrapper_get():
     """ wrap OS specific read functionality here, fallback to 'open()'
     """
 
-    class GFileWrapper:
+    class GFileWrapper(object):
         __slots__ = ("mode", "g_file")
 
         def __init__(self, url, mode='r'):
